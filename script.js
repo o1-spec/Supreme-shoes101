@@ -9,7 +9,7 @@ const collection = [...document.querySelectorAll('.collection-boxes')];
 const nextBtn = [...document.querySelectorAll('.btn-2-collection')];
 const prevBtn = [...document.querySelectorAll('.btn-1-collection')]
 
-collection.forEach(function(item,i){
+collection.forEach(function(item , i){
     let containerDimensions = item.getBoundingClientRect();
     let containerWidth = containerDimensions.width;
 
