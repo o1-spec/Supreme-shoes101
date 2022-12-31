@@ -52,13 +52,16 @@ all 0.3s
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 50%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
     background-color: #fafafa;
+    line-height: 1;
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 .container{
@@ -84,11 +87,15 @@ body{
 }
 
 .heading-primary{
-    font-size: 3.8rem;
+    font-size: 4.2rem;
     text-align: center;
-    margin: 3rem 0;
+    padding: 6rem 0;
 }
 
 .heading-primary span{
     color: #fd5545;
+}
+
+#item-2,#item-3,#item-4,#item-5{
+    display: none;
 }

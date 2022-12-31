@@ -1,762 +1,1069 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!---------ION-ICONS----------->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <!-------------FONT FAMILIES ------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+    rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="script.js"></script>
+  <!-----------CSS STYLES--------->
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Queries.css">
 
-    <link rel="icon" href="img/logo-nike/Nike logo.jpg">
-    <title>Supreme-Shoes</title>
+  <!---------JAVASCRIPT---------->
+  <script defer src="script.js"></script>
+
+  <link rel="icon" href="img/logo-nike/Nike logo.jpg">
+  <title>Supreme-Shoes</title>
 </head>
+
 <body>
-    <header class="header">
-        <img src="img/logo-nike/nike.png" alt="A Nike icon">
-        <nav class="nav-list">
-            <ul class="nav-links">
-                <li class="nav-link"><a href="#">Home</a></li>
-                <li class="nav-link"><a href="#about">About</a></li>
-                <li class="nav-link"><a href="#shop">Shop</a></li>
-                <li class="nav-link"><a href="#testimonials">Testimonials</a></li>
-                <li class="nav-link"><a href="#collection">Collection</a></li>
+  <header class="header">
+    <img src="img/logo-nike/nike.png" alt="A Nike icon">
+    <nav class="nav-list">
+      <ul class="nav-links">
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#about">About</a></li>
+        <li class="nav-link"><a href="#shop">Shop</a></li>
+        <li class="nav-link"><a href="#testimonials">Testimonials</a></li>
+        <li class="nav-link"><a href="#collection">Collection</a></li>
+      </ul>
+    </nav>
+    <div class="header-ion-icons">
+      <a href="#collection">
+        <ion-icon name="cart-outline"></ion-icon>
+      </a>
+      <a href="#newsletter">
+        <ion-icon name="person-outline"></ion-icon>
+      </a>
+      <a href="#">
+        <ion-icon name="search-outline"></ion-icon>
+      </a>
+    </div>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+  </header>
+
+  <main>
+    <section class="section-hero">
+      <div class="hero">
+        <div class="section-hero-info">
+          <h1 class="section-hero-heading">SUMMER<br>COLLECTIONS</h1>
+          <span>2022</span>
+          <p class="section-hero-text">Find your Shoes from our various collections,Here Shoes are endless and profit is
+            also endless Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis odio repellendus omnis.</p>
+          <a href="#collection" class="btn-shop">Shop-now &rarr;</a>
+
+          <div class="display-shoes-box">
+            <div class="display-shoes">
+              <div class="display-shoes-img">
+                <img src="img/Collection-nike/Nike 2.webp" alt="Nike">
+              </div>
+              <div class="display-shoes-text">
+                <p>Nike air pro max</p>
+                <ion-icon class="ion-icon-1" name="star-outline"></ion-icon>
+                <p class="display-shoes-price">$189</p>
+                <a href="#">Add to cart</a>
+                <ion-icon class="ion-icon-1" name="heart"></ion-icon>
+              </div>
+            </div>
+
+            <div class="display-shoes">
+              <div class="display-shoes-img">
+                <img src="img/Collection-nike/Nike 3.webp" alt="Nike">
+              </div>
+              <div class="display-shoes-text">
+                <p>Nike air pro max</p>
+                <ion-icon class="ion-icon-1" name="star-outline"></ion-icon>
+                <p class="display-shoes-price">$189</p>
+                <a href="#">Add to cart</a>
+                <ion-icon class="ion-icon-1" name="heart"></ion-icon>
+              </div>
+            </div>
+
+            <div class="buttons-display-shoes">
+              <button class="btn-1"></button>
+              <button class="btn-2"></button>
+              <button class="btn-3"></button>
+              <button class="btn-4"></button>
+              <button class="btn-5"></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="section-hero-img">
+          <img src="img/hero-nike/Nike hero 1.webp" alt="">
+          <div>
+            <p>Nike air max|</p>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+          </div>
+          <div>
+            <span>$120</span>
+            <a class="hero-buy-button" href="#">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="About-Section container">
+      <p><span>20K+</span> Orders Completed</p>
+      <p><span>40K+</span> Regular Visitor</p>
+      <p><span>15k+</span>Happy Customer</p>
+    </section>
+
+    <section class="offer-section" id="about">
+      <h2 class="heading-primary">What We <span>Offer</span></h2>
+      <div class="offers">
+        <div class="offer-box">
+          <div class="svg-offer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="offer-icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+          </div>
+          <p class="offer-heading">24/7 support</p>
+          <p class="offer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facilis official</p>
+          <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">
+        </div>
+
+        <div class="offer-box">
+          <div class="svg-offer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="offer-icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <p class="offer-heading">Cash Back</p>
+          <p class="offer-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, saepe.</p>
+          <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">
+        </div>
+
+        <div class="offer-box">
+          <div class="svg-offer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="offer-icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185zM9.75 9h.008v.008H9.75V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008V13.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+          </div>
+          <p class="offer-heading">Monthly Offer</p>
+          <p class="offer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, autem!</p>
+          <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">
+        </div>
+
+        <div class="offers-last">
+          <div class="svg-offer">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="offer-icon">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+            </svg>
+          </div>
+          <p class="offer-heading">Monthly Offer</p>
+          <p class="offer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, autem!</p>
+          <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section-collection" id="collection">
+      <h2 class="heading-primary">OUR <span>COLLECTION</span></h2>
+      <h2 class="collection-name">NIKE COLLECTION</h2>
+      <div class="nike-collection">
+        <div class="collection-boxes">
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 2.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 30</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 3.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 37</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 4.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$62.00</p>
+                <p class="price2">$95.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 34</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 19.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$75.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 36</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 5.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.50</p>
+                <p class="price2">$85.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 39</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 20.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$45.00</p>
+                <p class="price2">$69.00</p>
+              </div>
+
+              <div class="cart">
+                <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+                <ion-icon class="cart-icon color" name="heart"></ion-icon>
+                <div>
+                  <span>4.8</span>
+                  <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 38</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 12.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 38</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 13.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 31</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 14.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$62.00</p>
+                <p class="price2">$95.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 36</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 16.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$75.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 36</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 17.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.50</p>
+                <p class="price2">$85.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 40</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Nike 18.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$45.00</p>
+                <p class="price2">$69.00</p>
+              </div>
+
+              <div class="cart">
+                <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+                <ion-icon class="cart-icon color" name="heart"></ion-icon>
+                <div>
+                  <span>4.8</span>
+                  <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Air Max pengaus 48</a>
+          </div>
+
+        </div>
+
+        <div class="move-collection-icons">
+          <button class="btn-collection btn-1-collection">
+            <ion-icon name="arrow-back-outline"></ion-icon></button>
+          <button class="btn-collection btn-2-collection">
+            <ion-icon name="arrow-forward-outline"></ion-icon></button>
+        </div>
+      </div>
+
+
+
+      <div class="Addidas-Collection">
+        <h2 class="collection-name">ADDiDAS-COLLECTION</h2>
+        <div class="collection-boxes">
+
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 1.0.webp" alt="Addidas shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 2.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 4.0.webp" alt="Addidas shoe">
+              <div class="collection-prices">
+                <p class="price1">$62.00</p>
+                <p class="price2">$95.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 5.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$75.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 2.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.50</p>
+                <p class="price2">$85.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 16.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$45.00</p>
+                <p class="price2">$69.00</p>
+              </div>
+
+              <div class="cart">
+                <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+                <ion-icon class="cart-icon color" name="heart"></ion-icon>
+                <div>
+                  <span>4.8</span>
+                  <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 12.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 15.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$65.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 4.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$62.00</p>
+                <p class="price2">$95.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 16.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$32.00</p>
+                <p class="price2">$75.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 12.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$42.50</p>
+                <p class="price2">$85.00</p>
+              </div>
+            </div>
+
+            <div class="cart">
+              <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+              <ion-icon class="cart-icon color" name="heart"></ion-icon>
+              <div>
+                <span>4.8</span>
+                <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+          <div onclick="clickCollection()" class="collection-box">
+            <div class="collection">
+              <img src="img/Collection-nike/Addidas/Addidas 14.0.webp" alt="Nike shoe">
+              <div class="collection-prices">
+                <p class="price1">$45.00</p>
+                <p class="price2">$69.00</p>
+              </div>
+
+              <div class="cart">
+                <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+                <ion-icon class="cart-icon color" name="heart"></ion-icon>
+                <div>
+                  <span>4.8</span>
+                  <ion-icon class="cart-icon" name="star-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="collection-text">Addidas</a>
+          </div>
+
+        </div>
+
+        <div class="move-collection-icons">
+          <button class="btn-collection btn-1-collection">
+            <ion-icon name="arrow-back-outline"></ion-icon></button>
+          <button class="btn-collection btn-2-collection">
+            <ion-icon name="arrow-forward-outline"></ion-icon></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-items" id="shop">
+      <div class="items">
+
+        <div id="item-1" class="item-box">
+          <div class="item-img-info">
+            <div class="item">
+              <img class="item-img" src="img/Items-nike/nike-item 1.jpg" alt="A nike correct">
+              <div class="main-item">
+                <div class="item-info">
+                  <p class="item-name">Nike air max</p>
+                  <p class="item-price">$65.00</p>
+                </div>
+                <div class="item-cart">
+                  <a onclick="clickCollection()" class="nike-btn" href="#">Add to Cart</a>
+                  <div>
+                    <p>4.8k total reviews</p>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-features">
+            <h2 class="top-items"><span>Top</span> Items</h2>
+            <p class="top-items-info">Unique features of latest and<br> Trending products</p>
+            <ul class="features-lists">
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+                consectetur.</li>
+              <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum
+                dolor sit amet.</li>
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem
+                ipsum dolor sit consectetur</li>
             </ul>
-        </nav>
-        <div class="header-ion-icons">
-            <a href ="#collection">
-              <ion-icon name="cart-outline"></ion-icon>
-            </a>
-            <a href ="#newsletter">
-              <ion-icon name="person-outline"></ion-icon>
-            </a>
-            <a href ="#">
-             <ion-icon name="search-outline"></ion-icon>
-            </a>
-        </div>
-    </header>
-
-    <main>
-        <section class="section-hero">
-            <div class="hero">
-             <div class="section-hero-info">
-                <h1 class="section-hero-heading">SUMMER<br>COLLECTIONS</h1>
-                <span>2022</span>
-                <p class="section-hero-text">Find your Shoes from our various collections,Here Shoes are endless and profit is also endless</p>
-                <a href="#" class="btn-shop">Shop-now &rarr;</a>
-
-                <div class="display-shoes-box">
-                 <div class="display-shoes">
-                    <div class="display-shoes-img">
-                     <img src="img/Collection-nike/Nike 2.webp" alt="Nike">
-                    </div>
-                    <div class="display-shoes-text">
-                     <p>Nike air pro max</p>
-                     <ion-icon class="ion-icon-1" name="star-outline"></ion-icon>
-                     <p class="display-shoes-price">$189</p>
-                     <a href ="#">Add to cart</a>
-                     <ion-icon class="ion-icon-1" name="heart"></ion-icon>
-                    </div>
-                 </div>
-
-                 <div class="display-shoes">
-                    <div class="display-shoes-img">
-                     <img src="img/Collection-nike/Nike 3.webp" alt="Nike">
-                    </div>
-                    <div class="display-shoes-text">
-                     <p>Nike air pro max</p>
-                     <ion-icon class="ion-icon-1" name="star-outline"></ion-icon>
-                     <p class="display-shoes-price">$189</p>
-                     <a href ="#">Add to cart</a>
-                     <ion-icon class="ion-icon-1" name="heart"></ion-icon>
-                    </div>
-                 </div>
-
-                 <div class="buttons-display-shoes">
-                    <button class="btn-1"></button>
-                    <button class="btn-2"></button>
-                    <button class="btn-3"></button>
-                    <button class="btn-4"></button>
-                    <button class="btn-5"></button>
-                 </div>
+            <div class="features-button">
+              <div class="feature-button">
+                <button id="btn-left1" class="btn-left-features">
+                  <ion-icon name="arrow-back-outline"></ion-icon></button>
+                <button id="btn-right1" class="btn-right-features">
+                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
               </div>
-
-             </div>
-
-             <div class="section-hero-img">
-                <img src="img/hero-nike/Nike hero 1.webp" alt="">
-                <div>
-                <p>Nike air max|</p>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star"></ion-icon>
-                  <ion-icon name="star-outline"></ion-icon>
-                </div>
-                <div>
-                 <span>$120</span>
-                 <a  class="hero-buy-button" href="#">Buy now</a>
-                </div>
-              </div>
+              <p><span>1</span>/ 5</p>
             </div>
-        </section>
-
-        <section class="About-Section container">
-           <p><span>20K+</span> Orders Completed</p>
-           <p><span>40K+</span> Regular Visitor</p>
-           <p><span>15k+</span>Happy Customer</p>
-        </section> 
-
-        <section class="offer-section" id="about">
-            <h2 class="heading-primary">What We <span>Offer</span></h2>
-            <div class="offers">
-                <div class="offer-box">
-                    <div class="svg-offer">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="offer-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
-                      </svg>           
-                    </div>            
-                    <p class="offer-heading">24/7 support</p>
-                    <p class="offer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facilis official</p>
-                    <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">
-                </div>
-
-                <div class="offer-box">
-                    <div class="svg-offer">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="offer-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                      <p class="offer-heading">Cash Back</p>
-                      <p class="offer-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, saepe.</p>
-                      <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">
-                </div>
-
-                <div class="offer-box">
-                    <div class="svg-offer">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="offer-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0c1.1.128 1.907 1.077 1.907 2.185zM9.75 9h.008v.008H9.75V9zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008V13.5zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                      </svg>
-                    </div>
-                      <p class="offer-heading">Monthly Offer</p>
-                      <p class="offer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, autem!</p>  
-                      <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">          
-                </div>
-
-                <div class="offers-last">
-                    <div class="svg-offer">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="offer-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                      </svg>
-                    </div>
-                      <p class="offer-heading">Monthly Offer</p>
-                      <p class="offer-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, autem!</p>  
-                      <img class="offer-img" src="img/logo-nike/nike.png" alt="Nike logo">          
-                </div>
-            </div>
-        </section>
-
-        <section class="section-collection" id="collection">
-            <h2 class="heading-primary">OUR <span>COLLECTION</span></h2>
-            <div class="collection-boxes">
-
-                
-              <div class="collection-box">
-                <div class="collection">
-                  <img src="img/Collection-nike/Nike 2.webp" alt="Nike shoe">
-                  <div class="collection-prices">
-                    <p class="price1">$42.00</p>
-                    <p class="price2">$65.00</p>
-                  </div>
-                </div>
-
-                <div class="cart">
-                    <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                    <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                    <div>
-                        <span>4.8</span>
-                        <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                    </div>
-                  </div>
-                <a href="#" class="collection-text">Air Max pengaus 37</a>
-            </div>
-
-            <div class="collection-box">
-                <div class="collection">
-                  <img src="img/Collection-nike/Nike 3.webp" alt="Nike shoe">
-                  <div class="collection-prices">
-                    <p class="price1">$32.00</p>
-                    <p class="price2">$65.00</p>
-                  </div>
-                </div>
-
-                <div class="cart">
-                    <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                    <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                    <div>
-                        <span>4.8</span>
-                        <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                    </div>
-                  </div>
-                <a href="#" class="collection-text">Air Max pengaus 37</a>
-            </div>
-
-            <div class="collection-box">
-                <div class="collection">
-                  <img src="img/Collection-nike/Nike 4.webp" alt="Nike shoe">
-                  <div class="collection-prices">
-                    <p class="price1">$62.00</p>
-                    <p class="price2">$95.00</p>
-                  </div>
-                </div>
-
-                <div class="cart">
-                    <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                    <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                    <div>
-                        <span>4.8</span>
-                        <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                    </div>
-                  </div>
-                <a href="#" class="collection-text">Air Max pengaus 37</a>
-            </div>
-
-            <div class="collection-box">
-                <div class="collection">
-                  <img src="img/Collection-nike/Nike 19.webp" alt="Nike shoe">
-                  <div class="collection-prices">
-                    <p class="price1">$32.00</p>
-                    <p class="price2">$75.00</p>
-                  </div>
-                </div>
-
-                <div class="cart">
-                    <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                    <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                    <div>
-                        <span>4.8</span>
-                        <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                    </div>
-                  </div>
-                <a href="#" class="collection-text">Air Max pengaus 36</a>
-            </div>
-
-            <div class="collection-box">
-                <div class="collection">
-                  <img src="img/Collection-nike/Nike 5.webp" alt="Nike shoe">
-                  <div class="collection-prices">
-                    <p class="price1">$42.50</p>
-                    <p class="price2">$85.00</p>
-                  </div>
-                </div>
-
-                <div class="cart">
-                    <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                    <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                    <div>
-                        <span>4.8</span>
-                        <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                    </div>
-                  </div>
-                <a href="#" class="collection-text">Air Max pengaus 37</a>
-            </div>
-
-            <div class="collection-box">
-                <div class="collection">
-                  <img src="img/Collection-nike/Nike 20.webp" alt="Nike shoe">
-                  <div class="collection-prices">
-                    <p class="price1">$45.00</p>
-                    <p class="price2">$69.00</p>
-                  </div>
-
-                  <div class="cart">
-                    <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                    <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                    <div>
-                        <span>4.8</span>
-                        <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="collection-text">Air Max pengaus 38</a>
-            </div>
-
-            <div class="collection-box">
-              <div class="collection">
-                <img src="img/Collection-nike/Nike 12.webp" alt="Nike shoe">
-                <div class="collection-prices">
-                  <p class="price1">$42.00</p>
-                  <p class="price2">$65.00</p>
-                </div>
-              </div>
-
-              <div class="cart">
-                  <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                  <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                  <div>
-                      <span>4.8</span>
-                      <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                  </div>
-                </div>
-              <a href="#" class="collection-text">Air Max pengaus 37</a>
           </div>
-
-          <div class="collection-box">
-              <div class="collection">
-                <img src="img/Collection-nike/Nike 13.webp" alt="Nike shoe">
-                <div class="collection-prices">
-                  <p class="price1">$32.00</p>
-                  <p class="price2">$65.00</p>
-                </div>
-              </div>
-
-              <div class="cart">
-                  <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                  <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                  <div>
-                      <span>4.8</span>
-                      <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                  </div>
-                </div>
-              <a href="#" class="collection-text">Air Max pengaus 37</a>
-          </div>
-
-          <div class="collection-box">
-              <div class="collection">
-                <img src="img/Collection-nike/Nike 14.webp" alt="Nike shoe">
-                <div class="collection-prices">
-                  <p class="price1">$62.00</p>
-                  <p class="price2">$95.00</p>
-                </div>
-              </div>
-
-              <div class="cart">
-                  <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                  <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                  <div>
-                      <span>4.8</span>
-                      <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                  </div>
-                </div>
-              <a href="#" class="collection-text">Air Max pengaus 37</a>
-          </div>
-
-          <div class="collection-box">
-              <div class="collection">
-                <img src="img/Collection-nike/Nike 16.webp" alt="Nike shoe">
-                <div class="collection-prices">
-                  <p class="price1">$32.00</p>
-                  <p class="price2">$75.00</p>
-                </div>
-              </div>
-
-              <div class="cart">
-                  <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                  <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                  <div>
-                      <span>4.8</span>
-                      <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                  </div>
-                </div>
-              <a href="#" class="collection-text">Air Max pengaus 36</a>
-          </div>
-
-          <div class="collection-box">
-              <div class="collection">
-                <img src="img/Collection-nike/Nike 17.webp" alt="Nike shoe">
-                <div class="collection-prices">
-                  <p class="price1">$42.50</p>
-                  <p class="price2">$85.00</p>
-                </div>
-              </div>
-
-              <div class="cart">
-                  <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                  <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                  <div>
-                      <span>4.8</span>
-                      <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                  </div>
-                </div>
-              <a href="#" class="collection-text">Air Max pengaus 37</a>
-          </div>
-
-          <div class="collection-box">
-              <div class="collection">
-                <img src="img/Collection-nike/Nike 18.webp" alt="Nike shoe">
-                <div class="collection-prices">
-                  <p class="price1">$45.00</p>
-                  <p class="price2">$69.00</p>
-                </div>
-
-                <div class="cart">
-                  <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
-                  <ion-icon class="cart-icon color" name="heart"></ion-icon>
-                  <div>
-                      <span>4.8</span>
-                      <ion-icon class="cart-icon" name="star-outline"></ion-icon>
-                  </div>
-                </div>
-              </div>
-              <a href="#" class="collection-text">Air Max pengaus 38</a>
-          </div>
-
         </div>
 
-            <div class="move-collection-icons">
-                <button class="btn-collection btn-1-collection" >
-                  <ion-icon name="arrow-back-outline"></ion-icon></button>
-                <button  class="btn-collection btn-2-collection">
-                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
-            </div>
-        </section>
-
-        <section class="section-items" id="shop">
-          <div class="items">
-
-            <div class="item-box">
-            <div class="item-img-info">
-              <div class="item">
-                <img class="item-img" src="img/Items-nike/nike-item 1.jpg" alt="A nike correct">
-                <div class="main-item">
+        <div id="item-2" class="item-box">
+          <div class="item-img-info">
+            <div class="item">
+              <img class="item-img" src="img/Items-nike/Nike-item 3.webp" alt="A nike correct">
+              <div class="main-item">
                 <div class="item-info">
-                  <p class="item-name">Nike air max</p>
-                  <p class="item-price">$65.00</p>
+                  <p class="item-name">Nike air max 2.0</p>
+                  <p class="item-price">$55.00</p>
                 </div>
                 <div class="item-cart">
-                  <a class="nike-btn" href="#">Add to Cart</a>
+                  <a onclick="clickCollection()" class="nike-btn" href="#">Add to Cart</a>
                   <div>
                     <p>4.8k total reviews</p>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
                     <ion-icon class="cart-icon" name="star"></ion-icon>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
                     <ion-icon class="cart-icon" name="star"></ion-icon>
                   </div>
                 </div>
-                </div>
               </div>
             </div>
-
-            <div class="items-features">
-              <h2 class="top-items"><span>Top</span> Items</h2>
-              <p class="top-items-info">Unique features of latest and<br> Trending products</p>
-              <ul class="features-lists">
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem ipsum dolor sit amet consectetur</li>
-              </ul>
-              <div class="features-button">
-                <div class="feature-button">
-                 <button class="btn-left-features">
-                  <ion-icon name="arrow-back-outline"></ion-icon></button>
-                 <button class="btn-right-features">
-                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                </div>
-                <p><span>1</span>/ 5</p>
-              </div>
-            </div>
-            </div>
-
-            <div class="item-box">
-            <div class="item-img-info">
-              <div class="item">
-                <img class="item-img" src="img/Items-nike/nike-item 1.jpg" alt="A nike correct">
-                <div class="main-item">
-                <div class="item-info">
-                  <p class="item-name">Nike air max</p>
-                  <p class="item-price">$65.00</p>
-                </div>
-                <div class="item-cart">
-                  <a class="nike-btn" href="#">Add to Cart</a>
-                  <div>
-                    <p>4.8k total reviews</p>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="items-features">
-              <h2 class="top-items"><span>Top</span> Items</h2>
-              <p class="top-items-info">Unique features of latest and<br> Trending products</p>
-              <ul class="features-lists">
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem ipsum dolor sit amet consectetur</li>
-              </ul>
-              <div class="features-button">
-                <div class="feature-button">
-                 <button class="btn-left-features">
-                  <ion-icon name="arrow-back-outline"></ion-icon></button>
-                 <button class="btn-right-features">
-                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                </div>
-                <p><span>1</span>/ 5</p>
-              </div>
-            </div>
-            </div>
-
-            <div class="item-box">
-            <div class="item-img-info">
-              <div class="item">
-                <img class="item-img" src="img/Items-nike/nike-item 1.jpg" alt="A nike correct">
-                <div class="main-item">
-                <div class="item-info">
-                  <p class="item-name">Nike air max</p>
-                  <p class="item-price">$65.00</p>
-                </div>
-                <div class="item-cart">
-                  <a class="nike-btn" href="#">Add to Cart</a>
-                  <div>
-                    <p>4.8k total reviews</p>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="items-features">
-              <h2 class="top-items"><span>Top</span> Items</h2>
-              <p class="top-items-info">Unique features of latest and<br> Trending products</p>
-              <ul class="features-lists">
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem ipsum dolor sit amet consectetur</li>
-              </ul>
-              <div class="features-button">
-                <div class="feature-button">
-                 <button class="btn-left-features">
-                  <ion-icon name="arrow-back-outline"></ion-icon></button>
-                 <button class="btn-right-features">
-                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                </div>
-                <p><span>1</span>/ 5</p>
-              </div>
-            </div>
-            </div>
-
-            <div class="item-box">
-             <div class="item-img-info">
-              <div class="item">
-                <img class="item-img" src="img/Items-nike/nike-item 1.jpg" alt="A nike correct">
-                <div class="main-item">
-                <div class="item-info">
-                  <p class="item-name">Nike air max</p>
-                  <p class="item-price">$65.00</p>
-                </div>
-                <div class="item-cart">
-                  <a class="nike-btn" href="#">Add to Cart</a>
-                  <div>
-                    <p>4.8k total reviews</p>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                  </div>
-                </div>
-                </div>
-              </div>
-             </div>
-
-             <div class="items-features">
-              <h2 class="top-items"><span>Top</span> Items</h2>
-              <p class="top-items-info">Unique features of latest and<br> Trending products</p>
-              <ul class="features-lists">
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem ipsum dolor sit amet consectetur</li>
-              </ul>
-              <div class="features-button">
-                <div class="feature-button">
-                 <button class="btn-left-features">
-                  <ion-icon name="arrow-back-outline"></ion-icon></button>
-                 <button class="btn-right-features">
-                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                </div>
-                <p><span>1</span>/ 5</p>
-              </div>
-             </div>
-            </div>
-
-            <div class="item-box">
-            <div class="item-img-info">
-              <div class="item">
-                <img class="item-img" src="img/Items-nike/nike-item 1.jpg" alt="A nike correct">
-                <div class="main-item">
-                <div class="item-info">
-                  <p class="item-name">Nike air max</p>
-                  <p class="item-price">$65.00</p>
-                </div>
-                <div class="item-cart">
-                  <a class="nike-btn" href="#">Add to Cart</a>
-                  <div>
-                    <p>4.8k total reviews</p>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                    <ion-icon class="cart-icon"   name="star"></ion-icon>
-                    <ion-icon class="cart-icon" name="star"></ion-icon>
-                  </div>
-                </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="items-features">
-              <h2 class="top-items"><span>Top</span> Items</h2>
-              <p class="top-items-info">Unique features of latest and<br> Trending products</p>
-              <ul class="features-lists">
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum dolor sit amet consectetur.</li>
-                <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem ipsum dolor sit amet consectetur</li>
-              </ul>
-              <div class="features-button">
-                <div class="feature-button">
-                 <button class="btn-left-features">
-                  <ion-icon name="arrow-back-outline"></ion-icon></button>
-                 <button class="btn-right-features">
-                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
-                </div>
-                <p><span>1</span>/ 5</p>
-              </div>
-            </div>
-            </div>
-
-          </div>
-        </section>
-
-        <section class="section-testimonials" id="testimonials">
-          <h2 class="heading-primary">What Our <span>Clients Say</span><br> About Us</h2>
-
-          <div class="testimonials">
-
-            <div class="testimonial">
-              <div class="testimonial-box">
-                <img src="img/testimonials/femi (2).jpg" alt="A customer image">
-                <div class="testimonial-head">
-                  <p class="testimonial-name">David Oluwafemi</p>
-                  <p>Software Engineer</p>
-                </div>
-                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus eum doloribus iusto cupiditate cumque totam. Aliquam rem hic reiciendis tempora vitae quod tenetur quas. Nulla consequuntur deleniti odit nemo.</p>
-              </div>
-            </div>
-
-            <div class="testimonial">
-              <div class="testimonial-box">
-                <img src="img/testimonials/man_dp1.jpg" alt="A customer image">
-                <div class="testimonial-head">
-                  <p class="testimonial-name">Kalvin Davis</p>
-                  <p>Farmer</p>
-                </div>
-                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus eum doloribus iusto cupiditate cumque totam. Aliquam rem hic reiciendis tempora vitae quod tenetur quas. Nulla consequuntur deleniti odit nemo.</p>
-              </div>
-            </div>
-
-            <div class="testimonial">
-              <div class="testimonial-box">
-                <img src="img/testimonials/man_dp1.jpg" alt="A customer image">
-                <div class="testimonial-head">
-                  <p class="testimonial-name">Jonathan Prince</p>
-                  <p>Musician</p>
-                </div>
-                <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus eum doloribus iusto cupiditate cumque totam. Aliquam rem hic reiciendis tempora vitae quod tenetur quas. Nulla consequuntur deleniti odit nemo.</p>
-              </div>
-            </div>
-
           </div>
 
-          <!---
+          <div class="items-features">
+            <h2 class="top-items"><span>Top</span> Items</h2>
+            <p class="top-items-info">Unique features of latest and<br> Trending products</p>
+            <ul class="features-lists">
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+                consectetur.</li>
+              <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum
+                dolor sit amet consectetur.</li>
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem
+                ipsum dolor sit amet consectetur</li>
+            </ul>
+            <div class="features-button">
+              <div class="feature-button">
+                <button id="btn-left2" class="btn-left-features">
+                  <ion-icon name="arrow-back-outline"></ion-icon></button>
+                <button id="btn-right2" class="btn-right-features">
+                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
+              </div>
+              <p><span>2</span>/ 5</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="item-3" class="item-box">
+          <div class="item-img-info">
+            <div class="item">
+              <img class="item-img" src="img/Items-nike/Nike-item 6.jpg" alt="A nike correct">
+              <div class="main-item">
+                <div class="item-info">
+                  <p class="item-name">Nike air max 3.0</p>
+                  <p class="item-price">$45.00</p>
+                </div>
+                <div class="item-cart">
+                  <a onclick="clickCollection()" class="nike-btn" href="#">Add to Cart</a>
+                  <div>
+                    <p>4.8k total reviews</p>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-features">
+            <h2 class="top-items"><span>Top</span> Items</h2>
+            <p class="top-items-info">Unique features of latest and<br> Trending products</p>
+            <ul class="features-lists">
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+                consectetur.</li>
+              <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum
+                dolor sit amet consectetur.</li>
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem
+                ipsum dolor sit amet consectetur Lorem, ipsum.</li>
+            </ul>
+            <div class="features-button">
+              <div class="feature-button">
+                <button id="btn-left3" class="btn-left-features">
+                  <ion-icon name="arrow-back-outline"></ion-icon></button>
+                <button id="btn-right3" class="btn-right-features">
+                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
+              </div>
+              <p><span>3</span>/ 5</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="item-4" class="item-box">
+          <div class="item-img-info">
+            <div class="item">
+              <img class="item-img" src="img/Items-nike/Nike-item 4.jfif" alt="A nike correct">
+              <div class="main-item">
+                <div class="item-info">
+                  <p class="item-name">Nike air max 4.0</p>
+                  <p class="item-price">$75.00</p>
+                </div>
+                <div class="item-cart">
+                  <a onclick="clickCollection()" class="nike-btn" href="#">Add to Cart</a>
+                  <div>
+                    <p>4.8k total reviews</p>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-features">
+            <h2 class="top-items"><span>Top</span> Items</h2>
+            <p class="top-items-info">Unique features of latest and<br> Trending products</p>
+            <ul class="features-lists">
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+              </li>
+              <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum
+                dolor sit .</li>
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem
+                ipsum dolor sit </li>
+            </ul>
+            <div class="features-button">
+              <div class="feature-button">
+                <button id="btn-left4" class="btn-left-features">
+                  <ion-icon name="arrow-back-outline"></ion-icon></button>
+                <button id="btn-right4" class="btn-right-features">
+                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
+              </div>
+              <p><span>4</span>/ 5</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="item-5" class="item-box">
+          <div class="item-img-info">
+            <div class="item">
+              <img class="item-img" src="img/Items-nike/Nike-item 5.webp" alt="A nike correct">
+              <div class="main-item">
+                <div class="item-info">
+                  <p class="item-name">Nike air max 5.0</p>
+                  <p class="item-price">$25.00</p>
+                </div>
+                <div class="item-cart">
+                  <a onclick="clickCollection()" class="nike-btn" href="#">Add to Cart</a>
+                  <div>
+                    <p>4.8k total reviews</p>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                    <ion-icon class="cart-icon" name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-features">
+            <h2 class="top-items"><span>Top</span> Items</h2>
+            <p class="top-items-info">Unique features of latest and<br> Trending products</p>
+            <ul class="features-lists">
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet
+                consectetur.</li>
+              <li class="feature-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat Lorem ipsum
+                dolor sit amet consectetur.</li>
+              <li class="feature-list">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, voluptates Lorem
+                ipsum dolor sit amet consectetur</li>
+            </ul>
+            <div class="features-button">
+              <div class="feature-button">
+                <button id="btn-left5" class="btn-left-features">
+                  <ion-icon name="arrow-back-outline"></ion-icon></button>
+                <button id="btn-right5" class="btn-right-features">
+                  <ion-icon name="arrow-forward-outline"></ion-icon></button>
+              </div>
+              <p><span>5</span>/ 5</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-testimonials" id="testimonials">
+      <h2 class="heading-primary">What Our <span>Clients Say</span><br> About Us</h2>
+
+      <div class="testimonials">
+
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <img src="img/testimonials/femi (2).jpg" alt="A customer image">
+            <div class="testimonial-head">
+              <p class="testimonial-name">David Oluwafemi</p>
+              <p>Software Engineer</p>
+            </div>
+            <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus eum
+              doloribus iusto cupiditate cumque totam. Aliquam rem hic reiciendis tempora vitae quod tenetur quas. Nulla
+              consequuntur deleniti odit nemo.</p>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-box">
+            <img src="img/testimonials/man_dp1.jpg" alt="A customer image">
+            <div class="testimonial-head">
+              <p class="testimonial-name">Kalvin Davis</p>
+              <p>Farmer</p>
+            </div>
+            <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus eum
+              doloribus iusto cupiditate cumque totam. Aliquam rem hic reiciendis tempora vitae quod tenetur quas. Nulla
+              consequuntur deleniti odit nemo.</p>
+          </div>
+        </div>
+
+        <div class="testimonial query">
+          <div class="testimonial-box">
+            <img src="img/testimonials/man_dp1.jpg" alt="A customer image">
+            <div class="testimonial-head">
+              <p class="testimonial-name">Jonathan Prince</p>
+              <p>Musician</p>
+            </div>
+            <p class="testimonial-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis possimus eum
+              doloribus iusto cupiditate cumque totam. Aliquam rem hic reiciendis tempora vitae quod tenetur quas. Nulla
+              consequuntur deleniti odit nemo.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!---
           <div class="move-testimonials-icons">
             <button class="btn-collection btn-1-testimonial">
               <ion-icon name="arrow-back-outline"></ion-icon></button>
             <button class="btn-collection btn-2-testimonial">
               <ion-icon name="arrow-forward-outline"></ion-icon></button>
          </div>-->
-        </section>
+    </section>
 
-        <section class="newsletter" id="newsletter">
-          <div class="newsletter-box">
-            <div class="newsletters">
-              <h2 class="newsletter-heading">Join Our <span>News Letter</span></h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga soluta aperiam <br> odio? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <form>
-                <input type="email" placeholder="Insert Your Email here">
-                <button type="submit"><ion-icon name="arrow-forward-outline"></ion-icon></button>
-              </form>
-            </div>
-          </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-      <div class="grid-footer container">
-        <div class="logo-col">
-          <img src="img/logo-nike/nike.png" alt="A Nike Logo">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus placeat ipsam sunt aliquid nulla iusto ullam. Ipsa, eaque voluptate!</p>
-          <div class="ion-icon-logo-col">
-            <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href="https://wwww.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
-          </div>
+    <section class="newsletter" id="newsletter">
+      <div class="newsletter-box">
+        <div class="newsletters">
+          <h2 class="newsletter-heading">Join Our <span>News Letter</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga soluta aperiam <br> odio? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit.</p>
+          <form>
+            <input type="email" placeholder="Insert Your Email here">
+            <button type="submit"><ion-icon name="arrow-forward-outline"></ion-icon></button>
+          </form>
         </div>
-
-        <nav class="quick-links">
-          <p class="col-heading">Quick Links</p>
-          <ul class="footer-links">
-            <li class="footer-link"><a href="#">Home</a></li>
-            <li class="footer-link"><a href="#">About</a></li>
-            <li class="footer-link"><a href="#">Shop</a></li>
-            <li class="footer-link"><a href="#">Testimonial</a></li>
-            <li class="footer-link"><a href="#">Collections</a></li>
-          </ul>
-        </nav>
-
-        <nav class="products-col">
-          <p class="col-heading">Find Products</p>
-          <ul class="footer-links">
-            <li class="footer-link"><a href="#">About Us</a></li>
-            <li class="footer-link"><a href="#">Contact Us</a></li>
-            <li class="footer-link"><a href="#">Return Policy</a></li>
-            <li class="footer-link"><a href="#">Privacy Policy</a></li>
-            <li class="footer-link"><a href="#">Payment Policy</a></li>
-          </ul>
-        </nav>
-
-        <nav class="help-col">
-          <p class="col-heading">Get Help</p>
-          <ul class="footer-links">
-            <li class="footer-link"><a href="#">About Us</a></li>
-            <li class="footer-link"><a href="#">Contact Us</a></li>
-            <li class="footer-link"><a href="#">Return Policy</a></li>
-            <li class="footer-link"><a href="#">Privacy Policy</a></li>
-            <li class="footer-link"><a href="#">Payment Policy</a></li>
-          </ul>
-        </nav>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <div class="copyright">
-      <p>@<span class="date">2032</span> &copy; Oluwafemi Onadokun</p>
+  <footer class="footer">
+    <div class="grid-footer container">
+      <div class="logo-col">
+        <img src="img/logo-nike/nike.png" alt="A Nike Logo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus placeat ipsam sunt aliquid nulla
+          iusto ullam. Ipsa, eaque voluptate!</p>
+        <div class="ion-icon-logo-col">
+          <a href="https://www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="https://www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="https://wwww.instagram.com"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://www.linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </div>
+      </div>
+
+      <nav class="quick-links">
+        <p class="col-heading">Quick Links</p>
+        <ul class="footer-links">
+          <li class="footer-link"><a href="#">Home</a></li>
+          <li class="footer-link"><a href="#">About</a></li>
+          <li class="footer-link"><a href="#">Shop</a></li>
+          <li class="footer-link"><a href="#">Testimonial</a></li>
+          <li class="footer-link"><a href="#">Collections</a></li>
+        </ul>
+      </nav>
+
+      <nav class="products-col">
+        <p class="col-heading">Find Products</p>
+        <ul class="footer-links">
+          <li class="footer-link"><a href="#">About Us</a></li>
+          <li class="footer-link"><a href="#">Contact Us</a></li>
+          <li class="footer-link"><a href="#">Return Policy</a></li>
+          <li class="footer-link"><a href="#">Privacy Policy</a></li>
+          <li class="footer-link"><a href="#">Payment Policy</a></li>
+        </ul>
+      </nav>
+
+      <nav class="help-col">
+        <p class="col-heading">Get Help</p>
+        <ul class="footer-links">
+          <li class="footer-link"><a href="#">About Us</a></li>
+          <li class="footer-link"><a href="#">Contact Us</a></li>
+          <li class="footer-link"><a href="#">Return Policy</a></li>
+          <li class="footer-link"><a href="#">Privacy Policy</a></li>
+          <li class="footer-link"><a href="#">Payment Policy</a></li>
+        </ul>
+      </nav>
     </div>
+  </footer>
+
+  <div class="copyright">
+    <p>@<span class="date">2032</span> &copy; Oluwafemi Onadokun</p>
+  </div>
 </body>
+
 </html>
