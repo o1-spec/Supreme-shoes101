@@ -1,0 +1,447 @@
+/******************************************/
+/*Below 1280px 1.3 (80*16) SECTION*/
+/******************************************/
+@media(max-width: 80em){
+   .hero{
+       max-width: 120rem;
+       margin: 0 auto;
+    }
+}
+
+/******************************************/
+/*Below 1200px 1.3 (75*16) SECTION*/
+/******************************************/
+@media(max-width: 75em){
+    html{
+        font-size: 43.75%;
+    }
+
+    .header{
+        padding: 2rem 6.4rem;
+    }
+
+    .hero{
+        gap: 6.4rem;
+    }
+
+    .section-items{
+        margin: 2rem 5.2rem;
+        padding: 0 7.2rem;
+    }
+
+    .testimonials{
+        padding: 0 7.2rem;
+    }
+}
+
+/******************************************/
+/*Below 970PX  SECTION*/
+/******************************************/
+
+@media(max-width: 60em){
+    .hero{
+        grid-template-columns: 1fr;
+    }
+
+    .section-hero{
+        padding: 4rem 6.4rem;
+    }
+
+    .section-hero-img,.section-hero-info{
+        text-align: center;
+    }
+
+    .section-hero-img{
+       width: 90%;
+       justify-self: center;
+    }
+
+    .display-shoes-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons-display-shoes{
+        display: none;
+    }
+
+    .About-Section{
+        gap: 6rem;
+    }
+
+    .container{
+        max-width: 100rem;
+    }
+
+    .About-Section p span{
+        font-size: 2.4rem;
+        padding: 1.4rem;
+    }
+
+    .offer-section{
+        padding: 3rem 6.4rem;
+    }
+
+    .section-testimonials{
+        padding: 0 6.4rem;
+    }
+
+    .testimonials{
+        grid-template-columns: 1fr 1fr;
+    }
+    .query{
+        grid-column: 1/-1;
+        justify-content: center;
+    }
+}
+
+/******************************************/
+/*Below 940PX  SECTION*/
+/******************************************/
+@media(max-width: 59em){
+
+    .offers{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .collection-boxes{
+        max-width: 90rem;
+    }
+
+    .btn-1-collection{
+        left: 5%;
+    }
+
+    .btn-2-collection{
+        right: 5%;
+    }
+
+    .section-items{
+        padding: 0 4.4rem;
+    }
+
+    .header img{
+        grid-column: 2/3;
+        justify-self: center;
+        width: 9.4rem;
+        height: 9.4rem;
+    }
+
+    .nav-list{
+        grid-column: 1/2;
+        margin-top: -9rem;
+    }
+
+    .header-ion-icons{
+        grid-column: 3/4;
+        margin-top: -rem;
+    }
+
+     /*MOBILE NAVIGATION*/
+    .icon-mobile-nav[name= "menu-outline"]{
+        margin-left: -27rem;
+     }
+
+   .btn-mobile-nav {
+      margin-top: -9rem;
+      display: block;
+      z-index: 1;
+   }
+
+   .nav-list {
+      background-color: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(10px);
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(0%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s;
+
+      /* Hide the navigation */
+      /*ALLOWS NO TRANSITIONS AT ALL*/
+      /* display:none;*/
+
+      /*01.Hide the element visually*/
+      opacity: 0;
+      /*02.Makes it unaccessible to mouse and keyboard*/
+      pointer-events: none;
+
+      /*03.Hide it from screen readers*/
+      visibility: hidden;
+   }
+
+   .nav-open .nav-list {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+      overflow-x: hidden;
+   }
+
+   .nav-open .icon-mobile-nav[name="close-outline"] {
+      display: block;
+   }
+
+   .nav-open .icon-mobile-nav[name="menu-outline"] {
+      display: none;
+   }
+
+   .nav-links {
+      flex-direction: column;
+      gap: 4.8rem;
+   }
+
+   .nav-link{
+      font-size: 3rem;
+   }
+
+    .About-Section{
+        gap: 4rem;
+    }
+
+   .offer-section{
+    padding: 6rem 4rem;
+   }
+
+   .offers{
+    padding: 0 7.2rem;
+   }
+
+   .section-hero{
+    padding: 3rem 4rem;
+   }
+
+   .items{
+    padding: 0;
+   }
+
+   .section-items{
+    padding: 0;
+   }
+
+   .btn-1-collection{
+    top: 50%;
+    left: 0%;
+    }
+
+    .btn-2-collection{
+     right: 0%;
+     top: 50%;
+    }
+
+
+}
+
+/******************************************/
+/*BELOW 760PX SECTION*/
+/******************************************/
+@media(max-width: 48em){
+    .section-items{
+        justify-content: center;
+    }
+
+    .item-box{
+       grid-template-columns: 1fr;
+    }
+/*
+    .section-items{
+        display: none;
+    }*/
+}
+
+/******************************************/
+/*BELOW 704 SECTION*/
+/******************************************/
+@media(max-width: 44em) {
+    .About-Section{
+        padding: 2rem 2rem;
+    }
+
+    .item-box{
+        gap: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .top-items{
+        font-size: 3.6rem;
+    }
+
+    .feature-list{
+        font-size: 1.4rem;
+    }
+
+    .offers{
+        padding: 0 1.4rem;
+    }
+
+    .section-testimonials{
+        padding: 0;
+    }
+
+    .footer{
+        padding: 2rem 4rem;
+    }
+
+    .grid-footer{
+        grid-template-columns: repeat(3,1fr);
+        justify-self: center;
+    }
+
+    .logo-col{
+        grid-column: span 3;
+        grid-row: 2;
+        margin-bottom: 2rem;
+    }
+
+    .quick-links,.product-col,.help-col{
+        margin-bottom: 3.2rem;
+    }
+
+}
+
+/******************************************/
+/*BELOW 640PX SECTION*/
+/******************************************/
+@media(max-width: 40em){
+    .header{
+        padding: 2rem 6rem;
+    }
+
+    .header-ion-icons{
+        gap: 1rem;
+        margin-right: -4rem;
+    }
+
+    .section-hero-heading{
+        font-size: 5.2rem;
+    }
+
+    .section-hero-info span{
+        margin-bottom: 2rem;
+    }
+
+    .section-hero-text{
+        line-height: 1.3;
+        font-size: 1.8rem;
+    }
+
+    .About-Section p{
+        font-size: 1.2rem;
+    }
+
+    .About-Section p span{
+        font-size: 2.6rem;
+    }
+
+    .newsletter{
+        padding: 9.6rem 2rem;
+    }
+
+    .offer-info{
+        font-size: 1.3rem;
+    }
+}
+
+/*****************************************/
+/*BELOW 544PX (PHONES) SECTION*/
+/******************************************/
+@media(max-width: 34em) {
+    .About-Section{
+        gap: 2rem;
+    }
+
+    .offers{
+        grid-template-columns: 1fr;
+    }
+
+    .collection-boxes{
+        grid-template-columns: repeat(6,1fr);
+    }
+
+    .section-items{
+        padding: 9.6rem 2rem;
+    }
+
+    .testimonials{
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-box{
+        gap: 1.5rem;
+    }
+
+    .newsletter{
+        padding: 8rem 1rem;
+    }
+
+    .newsletter-heading{
+        font-size: 3.6rem;
+    }
+
+    form{
+        width: 70%;
+        display: flex;
+        margin-left: 6rem;
+    }
+
+    .header{
+        padding: 0.5rem 5rem;
+    }
+}
+
+/*****************************************/
+/*BELOW 500PX (PHONES) SECTION*/
+/******************************************/
+@media(max-width: 31em){
+    .header-ion-icons{
+        gap: 1rem;
+    }
+
+    .item-img{
+        width: 30rem;
+        margin-bottom: 2rem;
+    }
+
+    .icon-mobile-nav[name= "menu-outline"]{
+        margin-left: -20rem;
+    }
+    .About-Section{
+        gap: 1rem;
+        margin: 0 auto;
+    }
+    .About-Section p span{
+        font-size: 1.6rem;
+    }
+
+    .footer{
+        padding: 2rem 2rem;
+    }
+
+}
+
+/*****************************************/
+/*BELOW 420PX (PHONES) SECTION*/
+/******************************************/
+@media(max-width: 26em){
+    .section-hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer{
+        padding: 2rem 1rem;
+    }
+
+}
+
